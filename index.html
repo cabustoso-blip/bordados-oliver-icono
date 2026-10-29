@@ -1,117 +1,118 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
   <title>Bordados Oliver</title>
 
-  <!-- Ícono para iPhone / iPad -->
-  <link rel="apple-touch-icon" sizes="180x180" href="Oliver_icono_180.png">
-  <link rel="icon" type="image/png" sizes="180x180" href="Oliver_icono_180.png">
+  <!-- Ícono oficial de Oliver -->
+  <link rel="apple-touch-icon"
+        sizes="180x180"
+        href="./Oliver_icono_180.png">
 
-  <!-- Configuración visual para modo app -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Bordados Oliver">
-  <meta name="theme-color" content="#bfe3f7">
+  <link rel="icon"
+        type="image/png"
+        href="./Oliver_icono_180.png">
+
+  <meta name="theme-color" content="#BFE8F4">
+  <meta name="apple-mobile-web-app-title"
+        content="Bordados Oliver">
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
       min-height: 100vh;
       display: flex;
-      align-items: center;
       justify-content: center;
-      background: linear-gradient(180deg, #eef7fd 0%, #dceefb 100%);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: #29485e;
-      padding: 20px;
+      align-items: center;
+      padding: 24px;
+      background: #EAF5FC;
+      font-family: -apple-system,
+        BlinkMacSystemFont, sans-serif;
+      color: #315B78;
     }
 
     .card {
       width: 100%;
-      max-width: 420px;
-      background: rgba(255,255,255,0.92);
-      border: 1px solid #d5e7f4;
-      border-radius: 26px;
-      padding: 28px 24px;
+      max-width: 390px;
+      padding: 35px 24px;
+      background: #FFFFFF;
+      border-radius: 24px;
       text-align: center;
-      box-shadow: 0 10px 30px rgba(75, 119, 153, 0.12);
+      box-shadow: 0 8px 30px
+        rgba(66, 124, 164, 0.12);
     }
 
     .logo {
-      width: 120px;
-      height: 120px;
-      object-fit: contain;
-      border-radius: 28px;
-      display: block;
-      margin: 0 auto 18px;
-      background: white;
-      padding: 10px;
-      border: 1px solid #dcecf8;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 32px;
     }
 
     h1 {
-      margin: 0 0 8px;
-      font-size: 28px;
-      color: #2f5f82;
+      font-size: 26px;
+      margin: 18px 0 9px;
     }
 
     p {
-      margin: 0 0 14px;
-      color: #6f8ba0;
+      color: #718EA3;
       line-height: 1.5;
       font-size: 15px;
     }
 
-    .mini {
-      font-size: 13px;
-      color: #7d97aa;
-      margin-top: 14px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 12px;
-      background: #6aa8d6;
-      color: white;
-      text-decoration: none;
-      padding: 14px 18px;
+    .button {
+      display: block;
+      margin-top: 25px;
+      padding: 17px 20px;
       border-radius: 14px;
-      font-weight: 700;
-      font-size: 16px;
-      border: none;
+      background: #548DB8;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      text-decoration: none;
     }
 
-    .btn:active {
-      transform: scale(0.98);
+    .small {
+      font-size: 12px;
+      margin-top: 20px;
     }
   </style>
-
-  <script>
-    const DESTINO = "https://script.google.com/macros/s/AKfycbz-8sm1AvzL87-7ilz21VJQBZx-PIf2opx2ueVuJV7T98EYHiQMwGRmh7YzY1G36_FL/exec?vista=movil";
-
-    function abrirOliver() {
-      window.location.href = DESTINO;
-    }
-
-    window.onload = function () {
-      setTimeout(() => {
-        abrirOliver();
-      }, 900);
-    };
-  </script>
 </head>
+
 <body>
-  <div class="card">
-    <img class="logo" src="Oliver_icono_180.png" alt="Bordados Oliver">
-    <h1>Bordados Oliver</h1>
-    <p>Abriendo tu aplicación…</p>
-    <a class="btn" href="https://script.google.com/macros/s/AKfycbz-8sm1AvzL87-7ilz21VJQBZx-PIf2opx2ueVuJV7T98EYHiQMwGRmh7YzY1G36_FL/exec?vista=movil">
+  <main class="card">
+
+    <img
+      class="logo"
+      src="./Oliver_icono_180.png"
+      alt="Oliver"
+    >
+
+    <h1>Bordados Oliver 🐶</h1>
+
+    <p>
+      Tu taller organizado, siempre contigo.
+    </p>
+
+    <a
+      class="button"
+      href="https://script.google.com/macros/s/AKfycbz-8sm1AvzL87-7ilz21VJQBZx-PIf2opx2ueVuJV7T98EYHiQMwGRmh7YzY1G36_FL/exec?vista=movil"
+    >
       Abrir Oliver
     </a>
-    <p class="mini">Si no se abre automáticamente, toca el botón.</p>
-  </div>
+
+    <p class="small">
+      Acceso exclusivo para cuentas autorizadas.
+    </p>
+
+  </main>
 </body>
 </html>
